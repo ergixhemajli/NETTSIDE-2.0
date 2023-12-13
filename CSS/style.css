@@ -1,0 +1,314 @@
+body{
+    background-color: black;
+}
+
+/* Navigation bar */
+.navBar{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    flex-grow: 3;
+    margin-top: 1%;
+}
+.text{
+    font-family: 'Trochut', cursive;
+    font-size: 2vw;;
+    color: white;
+    text-decoration: none;
+    margin-top: 0.5%;
+}
+#logo{
+    background-image: url("../IMAGES/FLIKK LOGO WEB.svg");
+    background-repeat:no-repeat;
+    background-size: 8vw;
+    border: none;
+    align-items: center;
+    width: 8vw;
+    height: 4vw;
+}
+
+/* Animations */
+.text:hover, #logo:hover, .navBar #responsiveMenu:hover, .linkImg:hover, #sound:hover{
+    transition: transform .3s linear;
+    transform: scale(130%);
+}
+.text, #logo, .navBar #responsiveMenu, .linkImg, #sound{
+    transition: transform .3s linear;
+}
+
+/* Sound on/off button on home page */
+#sound{
+    background-image: url("../ICONS/Mute.png");
+    background-repeat:no-repeat;
+    background-size: 5vw;
+    border: none;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 2%;
+    margin-left: 3%;
+}
+
+/* General underlay */
+.underlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* General overlay */
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50px;
+    opacity: 90%;
+}
+
+/* About me page */
+/* About me overlay */
+.about_overlay {
+	position: absolute;
+    right: 0;
+    width: auto;
+	text-align: left;
+    background-color: black;
+    opacity: 80%;
+    border-radius: 50px;
+    padding: 1%;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+#about_box {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+/* About me string */
+.about{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bodoni Moda', serif;
+    color: orange;
+    font-size: 2vw;
+    line-height:1;
+    height: 2.5vw;
+}
+#description{
+    color: white;
+    font-size: 1.5vw;
+}
+
+/* Movies page */
+/* Movies */
+#mov{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position:center;
+    top: 0;
+    left: 0;
+}
+.movies {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:center;
+}
+
+/* Stills page */
+/* Stills */
+#still_underlay{
+    height: 95%;
+}
+#photo_gallery {
+    position: absolute;
+    left: 0;
+    margin-top: 50vw;
+    margin-right: 1%;
+    margin-left: 1%;
+    line-height:0;
+    column-count:2;
+    column-gap:10px;
+}
+#photo_gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:10px;
+ }
+
+/* Contact me page */
+/* Contact me */
+.contact_overlay {
+    position:absolute;
+    bottom: 10%;
+    left: 25%;
+    align-items: center;
+    width: 50%;
+    background-color:black;
+    opacity: 80%;
+    border-radius: 50px;
+}
+.contact_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+/* Contact link pictures */
+.picture{
+    background-repeat:no-repeat;
+    background-size: 5vw;
+    border: none;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+}
+/* Contact links */
+#facebook{
+    background-image: url("../ICONS/Facebook-color.png");
+    opacity: 75%;
+}
+
+#mail{
+    background-image: url("../ICONS/Mail-color.png");
+}
+
+#instagram{
+    background-image: url("../ICONS/Instagram-color.png");
+}
+
+#linkedin{
+    background-image: url("../ICONS/Linkedin-color.png");
+}
+
+#phone{
+    background-image: url("../ICONS/Phone-color.png");
+}
+/* Contact link pictures */
+.linkImg{
+    background-repeat:no-repeat;
+    background-size: 5vw;
+    border: none;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+}
+
+/* Styling menu button (three stacked lines) */
+.navBar #responsiveMenu{
+    display: none;
+    background-image: url("../ICONS/Menu.png");
+    background-repeat:no-repeat;
+    background-size: 6vw;
+    border: none;
+    align-items: center;
+    width: 6vw;
+    height: 6vw;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    /* Stills */
+    #photo_gallery {
+        column-count:1;
+        margin-top: 150vw;
+    }
+
+    /* Contact me */
+    .linkImg{
+        background-repeat:no-repeat;
+        background-size: 8vw;
+        border: none;
+        align-items: center;
+        width: 8vw;
+        height: 8vw;
+    }
+    .contact_overlay {
+        bottom: 15%;
+        left: 5%;
+        align-items: center;
+        width: 90%;
+        background-color:black;
+        opacity: 80%;
+        border-radius: 50px;
+    }
+    
+    /* About me */
+    .about_overlay {
+        padding: 3%;
+    }
+    .about{
+        font-size: 3.5vw;
+        margin-top: 2%;
+        height: 3.5vw;
+    }
+    #description{
+        font-size: 2.5vw;
+    }
+
+    /* Navigation bar */
+    #logo{
+        background-size: 16vw;
+        width: 16vw;
+        height: 7vw;
+    }
+    .text{
+        display: none;
+    }
+    .navBar #responsiveMenu{
+        display: block;
+        position: absolute;
+        left: 10%;
+    }
+    .navBar.responsive{
+        position: static;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        gap: 30px;
+        justify-content:safe;
+    }
+    .navBar.responsive .text{
+        display: block;
+        align-items: center;
+        margin-left: 40%;
+        font-size: 4vw;
+        margin-top: 0%;
+    }
+    .navBar.responsive #responsiveMenu{
+        position: relative;
+        background-image: url("../ICONS/x.png")
+    }
+    .navBar.responsive #logo{
+        display: none;
+    }
+
+    /* Sound on/off home page */
+    #sound{
+        background-size: 10vw;
+        width: 10vw;
+        height: 10vw;
+        margin-bottom: 8%;
+        margin-left: 8%;
+    }
+}

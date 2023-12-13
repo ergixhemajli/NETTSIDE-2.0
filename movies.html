@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLIKK / MOVIES</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Trochut:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!-- Video elements -->
+    <div id="mov">
+        <video class="movies" width="600" height="150" preload="auto" controls loop id="M1">
+            <source src="FILES/PORTFOLIO/Moments of Brisbane.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video class="movies" width="600" height="150" preload="auto" controls loop id="M2">
+            <source src="FILES/PORTFOLIO/Mitsubishi spec ad.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video class="movies" width="600" height="150" preload="auto" controls loop id="M3">
+            <source src="FILES/PORTFOLIO/Family Bonfire.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Navigation bar -->
+    <header class="overlay">
+        <nav class="navBar" id="navigation">
+            <a href="javascript:void(0);" id="responsiveMenu" onclick="responsiveMenu()"></a>
+            <a href="movies.html" id="movies" class="text">MOVIES</a>
+            <a href="stills.html" id="stills" class="text">STILLS</a>
+            <a href="index.html" id="logo"></a>
+            <a href="about.html" id="about" class="text">ABOUT</a>
+            <a href="contact.html" id="contact" class="text">CONTACT</a>
+        </nav>
+    </header>
+
+    <script src="JS/script.js"></script>
+</body>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLIKK</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Trochut:ital,wght@0,400;0,700;1,400&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Showreel -->
+    <video class="underlay" id="showreel" width="600" height="150" preload="auto" autoplay loop muted playsinline>
+        <source src="FILES/showreel.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navigation bar -->
+    <header class="overlay">
+        <nav class="navBar" id="navigation">
+            <a href="javascript:void(0);" id="responsiveMenu" onclick="responsiveMenu()"></a>
+            <a href="movies.html" class="text">MOVIES</a>
+            <a href="stills.html" class="text">STILLS</a>
+            <a href="index.html" id="logo"></a>
+            <a href="about.html" class="text">ABOUT</a>
+            <a href="contact.html" class="text">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- Sound on/off button -->
+    <div>
+        <a href="javascript:void(0);" class="muted" id="sound" onclick="showreelSound()"></a>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
